@@ -71,7 +71,7 @@ void Device_NTC_ADC_Read(uint16_t value){
 int main(){
 	Interpolation_Table_Init();
 
-	for(int i = 0; i > 4096 ;i++){
+	for(int i = 0; i < 4096 ;i++){
 		Device_NTC_ADC_Read(i);
 	}
 	for(int i = 4096; i > 0 ; i--){
